@@ -1,6 +1,6 @@
 
 class TicketManager {
-
+    #precioBaseDeGanancia
     constructor() {
         this.events = []
         this.#precioBaseDeGanancia = 0.15
@@ -44,8 +44,8 @@ class TicketManager {
 }
 const manager = new TicketManager()
 
-manager.addEvents("Duki", "Capri", 3000, 30,0)
-manager.addEvents("khea", "Catre", 1000, 60, 0)
+manager.addEvent("Duki", "Capri", 3000, 30,0)
+manager.addEvent("khea", "Catre", 1000, 60, 0)
 
 console.log(manager.addParticipant(1,333));
 console.log(manager.addParticipant(1,444));
